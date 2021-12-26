@@ -1,9 +1,10 @@
 import React from 'react'
 import classes from './MeetupItem.module.css'
-
+import { Cards } from '../../Ui/Cards';
 
 export const MeetupItem = (props) => {
     return (
+        <Cards>
         <li className={classes.item}>
       <div className={classes.image}>
         <img src={props.image} alt={props.title} />
@@ -17,6 +18,7 @@ export const MeetupItem = (props) => {
         <button>To Favorites</button>
       </div>
     </li>
+    </Cards>
 
     )
 }
