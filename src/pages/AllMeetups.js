@@ -34,10 +34,10 @@ export const AllMeetups = () => {
       }).then((data) => {
         const meetups = [];
 
-        for ( const key in data){
+        for (const key in data){
           const meetup= {
-            id: key,
-            ...data [key]
+            id:key,
+            ...data[key]
           };
           meetups.push(meetup)
 
